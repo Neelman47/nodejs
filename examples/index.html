@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title>test</title>
+    </head>
+    <body>
+        <h1>Neel</h1>
+        <button onclick="myfun()">click me</button>
+    </body>
+    <script>
+         async function myfun() {
+            console.log("Button clicked");
+
+            try {
+                const response = await fetch('http://localhost:3000/', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        username: 'exampleUser',
+                        password: 'examplePass'
+                    })
+                });
+
+                const data = await response.json();
+                console.log('Response:', data);
+            } catch (error) {
+                console.error('Error making POST request:', error);
+            }
+        }
+    </script>
+</html>
