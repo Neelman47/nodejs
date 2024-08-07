@@ -6,7 +6,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true})); 
  
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/my_gmapindex.html");
+  res.sendFile(__dirname + "/ui.html");
 });
  
 app.post("/", (req, res) => {
@@ -26,4 +26,4 @@ app.post("/", (req, res) => {
   // res.send("Data received");
 });
  
-app.listen(3000);
+app.listen(8000);

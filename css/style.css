@@ -1,0 +1,39 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  /*--------------------------------------------------------------
+  # Header 
+  --------------------------------------------------------------*/
+   .nav-link{
+    color: #2d415f;
+  }
+  .nav-link:hover{
+    color: blue;
+  }
+  
+  
+  .header-bg-color{
+    background-color:#f6f7ff
+  }
+  
+  
+  
+  /*--------------------------------------------------------------
+  # Footer
+  --------------------------------------------------------------*/
+  .footer{
+      background-color:#f6f7ff;
+      /* left: 0;
+      bottom: 0; 
+      padding: 10px; */
+      
+  }
+  .footercolor{
+      background-color:#2d415f;
+      color: white;
+      
+  }
